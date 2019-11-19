@@ -1,0 +1,8 @@
+To install sdkman
+https://gist.github.com/masudcsesust04/3c8ba2390fcd49e61851e92ea19907e2
+
+
+
+Debug in device 
+sudo ionic cordova build android
+cordova run android
