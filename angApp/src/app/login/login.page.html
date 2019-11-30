@@ -1,0 +1,66 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Chownow</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<br/>
+<br/>
+
+<ion-content >
+    <ion-card>
+      
+        <ion-card-content>
+          
+            <!-- <img src="./assets/icon/choice.png" (click)="signInWithGoogle()" width="50%" /> -->
+            <div class="jumbotron bg-transparent text-center">
+                <div *ngIf="!user" class="card text-center">
+                  <h6 class="card-header">
+                    Social Login Demo
+                  </h6>
+                  <div class="card-block">
+                    <h4 class="card-title">Not signed in</h4>
+                    <p class="card-text">Sign in with</p>
+                  </div>
+                  <div class="card-block">
+                    <!-- <button class="btn btn-social-icon btn-google" (click)="signInWithGoogle()"><span class="fa fa-google"></span></button> -->
+                    <img src="./assets/icon/choice.png" class="btn btn-social-icon btn-google" (click)="signInWithGoogle()" width="50%" />
+                  </div>
+                </div>
+                <div *ngIf="user" class="card text-center">
+                  <h6 class="card-header">
+                    Social Login Demo
+                  </h6>
+                  <div class="card-block"></div>
+                  <img class="card-img-top img-responsive photo" src="{{ user.photoUrl }}">
+                  <div class="card-block">
+                    <h4 class="card-title">{{ user.name }}</h4>
+                    <p class="card-text">{{ user.email }}</p>
+                  </div>
+                  <div class="card-block">
+                    <button class="btn btn-danger" (click)="signOut()">Sign out</button>
+                  </div>
+                </div>
+              </div>
+              
+        </ion-card-content>
+        </ion-card>
+      
+      <ion-card>
+        <ion-item>
+          <ion-icon name="pin" slot="start"></ion-icon>
+          <ion-label>Sai Riddhi Apartment, Airoli sector 9</ion-label>
+          <ion-button fill="outline" slot="end">Locate</ion-button>
+        </ion-item>
+      
+        <ion-card-content>
+          Find and share food nearby<br/>
+          
+          
+        </ion-card-content>
+
+      </ion-card>
+      
+
+</ion-content>
