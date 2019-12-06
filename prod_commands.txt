@@ -1,0 +1,38 @@
+Connect to server 
+ssh mrcgddmy@108.179.222.240
+
+Find file extension .js and delete in the particular folder. Run the command on current folder which will delete all the js files in the current location.
+find . -type f -iname \*.js -delete
+
+remove a folder
+rm -rf modern-foodies-india/
+
+moder foodies url 
+git clone https://github.com/Raj-kishore/modern-foodies-india.git
+
+Run api jar 
+nohup java -jar /home/mrcgddmy/public_html/modern-foodies-india/foodali-webapi/fapi.jar com.example.demo.DemoApplication &
+
+create www folder ionic 
+ionic build --prod 
+
+kill port 
+fuser -k 8080/tcp
+
+copy all from www folder to public_html
+sudo yes | cp -rf /home/mrcgddmy/public_html/modern-foodies-india/www/* /home/mrcgddmy/public_html/
+
+self signed certificate command
+keytool -genkey -alias tomcat -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore keystore.p12 -validity 3650
+
+download from server using ssl 
+scp -r mrcgddmy@108.179.222.240:/home/mrcgddmy/ssl /home/rajkishor/Desktop/foodali/modern-foodies-india/ssl
+
+ngrok command
+ngrok http -host-header=localhost 8100
+
+
+
+
+
+
