@@ -21,8 +21,12 @@ fuser -k 8080/tcp
 
 copy all from www folder to public_html
 sudo yes | cp -rf /home/mrcgddmy/public_html/modern-foodies-india/www/* /home/mrcgddmy/public_html/
+sudo yes | cp -rf /var/www/html/Chow-now/www/* /var/www/html/
 
-self signed certificate command
+
+
+self signed certificate com
+mand
 keytool -genkey -alias tomcat -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore keystore.p12 -validity 3650
 
 download from server using ssl 
